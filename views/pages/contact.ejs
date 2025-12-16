@@ -1,0 +1,133 @@
+<%- include('../partials/header')%>
+    <!-- banner start -->
+    <main>
+        <section class="banner-about position-relative d-flex align-items-end py-5">
+                <div class="overlay-ab-pg-2 position-absolute top-0 start-0"></div>
+                 <div class="container">
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-center">
+                            <ul class="list-unstyled m-0 d-flex">
+                                <li>
+                                    <a href="../index" class="text-decoration-none text-black ">HOME <i class="fa-solid fa-chevron-right me-1" style="color: #000000;"></i></a>
+                                </li>
+                                <li class="text-black ">CONTACT US<i class="fa-solid fa-chevron-right me-1" style="color: #000000;"></i></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 d-flex justify-content-center">
+                            <h2 class="display-3 fw-semibold ">Contact Us</h2>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    <!-- banner end -->
+    <!-- section-1 start -->
+     <section class="py-5 about-s2">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 d-flex flex-wrap flex-md-nowrap">
+                    <div class="col-3 col-12 col-md-3">
+                        <div class="d-flex justify-content-center">
+                            <div class="contact-bol d-flex align-items-center justify-content-center"><i class="fa-solid fa-location-dot fa-xl" style="color: #ffffff;"></i></div>
+                        </div>
+                        <div class="text d-flex justify-content-center pt-4">
+                            <h5 class="text-black fw-semibol font-size-15-md font-size-lg-19">Address:</h5>
+                            <p class="text-secondary fs-19 ms-2 fw-normal font-size-15-md font-size-lg-19">198 West 21th  Street, Suite 721 New York NY 10016</p>
+                        </div>
+                    </div>
+                    <div class="col-3 col-12 col-md-3">
+                        <div class="d-flex justify-content-center">
+                            <div class="contact-bol d-flex align-items-center justify-content-center"><i class="fa-solid fa-phone fa-xl" style="color: #ffffff;"></i></div>
+                        </div>
+                        <div class="text d-flex justify-content-center pt-4">
+                            <span><h5 class="text-black d-flex fw-semibol font-size-15-md font-size-lg-19">Phone:<a href="#" class="text-decoration-none "><p class="text-success fs-19 ms-2 fw-normal font-size-15-md font-size-lg-19">+ 1235 <br class="d-sm-none d-xl-none"> 2355 98</p></a></h5></span>
+                        </div>
+                    </div>
+                    <div class="col-3 col-12 col-md-3">
+                        <div class="d-flex justify-content-center">
+                            <div class="contact-bol d-flex align-items-center justify-content-center"><i class="fa-solid fa-paper-plane fa-xl" style="color: #ffffff;"></i></div>
+                        </div>
+                        <div class="text d-flex justify-content-center pt-4">
+                            <span><h5 class="text-black d-flex fw-semibol font-size-15-md font-size-lg-19">Email: <a href="#" class="text-decoration-none "><p class="text-success fs-19 ms-2 fw-normal font-size-15-md font-size-lg-19"> info@yoursite. <br class="d-sm-none d-xl-none">com</p></a></h5></span>
+                        </div>
+                    </div>
+                    <div class="col-3 col-12 col-md-3">
+                        <div class="d-flex justify-content-center">
+                            <div class="contact-bol d-flex align-items-center justify-content-center"><i class="fa-solid fa-earth-asia fa-xl" style="color: #ffffff;"></i></div>
+                        </div>
+                        <div class="text d-flex justify-content-center pt-4">
+                            <span><h5 class="text-black d-flex fw-semibol font-size-15-md font-size-lg-19">Website<a href="#" class="text-decoration-none"><p class="text-success fs-19 ms-2 fw-normal  font-size-15-md font-size-lg-19">yoursite.com</p></a></h5></span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- section-1 end -->
+    <!-- section-2 start -->
+     <section class="about-s2 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex pb-5 flex-wrap">
+                    <div class="col-5 col-12 col-md-6 col-xl-5">
+                        <div class="img-contact-s2"></div>
+                    </div>
+                    <div class="col-7 p-5 img-contact col-12 col-md-6 col-xl-7">
+                        <div class="col-12">
+                            <h2 class="text-black fw-normal">Contact Us</h2>
+                        </div>
+
+                        <form action="/submit" method="POST">
+                                <input type="text" name="name" placeholder="Your Name" class="shadow" required>
+
+                                <input type="email" name="email" placeholder="Email" class="shadow" required>
+
+                                <select name="service" class="shadow" required>
+                                    <option value="">Service</option>
+                                    <option value="Relation Problem">Relation Problem</option>
+                                    <option value="Couple Counseling">Couple Counseling</option>
+                                    <option value="Depression Treatment">Depression Treatment</option>
+                                    <option value="Family Problem">Family Problem</option>
+                                    <option value="Personal Problem">Personal Problem</option>
+                                    <option value="Business Problem">Business Problem</option>
+                                </select>
+
+                                <textarea name="message" placeholder="Message" rows="5" class="shadow"></textarea>
+
+                                <button class="bg-success text-white fo" type="submit">
+                                    Send Message
+                                </button>
+                            </form>
+
+                        <!-- <form action="#" method="POST">
+                            <div class="col-12 d-flex">
+                                <div class="col-6">
+                                    <label for="name" class="d-flex font-size-12 text-success ps-2 pt-3 fw-bold">FULL NAME</label>
+                                    <input type="text" name="name" placeholder="Your Name" class=" w-100 border-0 border-bottom ">
+                                </div>
+                                <div class="col-6 ps-3">
+                                    <label for="email" class="d-flex font-size-12 text-success ps-2 pt-3 fw-bold">EMAIL ADDERSS</label>
+                                    <input type="email" name="email" placeholder="Email" class="w-100 border-0 border-bottom ">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label for="subject" class="d-flex font-size-12 text-success ps-2 pt-3 fw-bold">SUBJECT</label>
+                                <input type="text" placeholder="subject" class="w-100 border-0 border-bottom place">
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="d-flex font-size-12 text-success ps-2 pt-3 fw-bold">MESSAGE</label>
+                                <textarea name="message" placeholder="Message" rows="5" class="border-bottom"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="button" class="btn btn-success">Send Message</button>
+                            </div>
+                        </form> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- section-2 end -->
+    </main>
+    <!-- footer start -->
+<%- include('../partials/footer')%>
