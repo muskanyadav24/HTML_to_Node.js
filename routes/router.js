@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const controller = require('../controllers/controller');
 
-router.get('/', controller.home);
+router.get(["/", "/index"], controller.home);
 router.post('/submit', controller.submitForm);
 
 router.get('/about', controller.about);
