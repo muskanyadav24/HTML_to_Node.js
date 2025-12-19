@@ -3,31 +3,31 @@ let idCounter = 1;
 
 // PAGES
 const home = (req, res) => {
-    res.render('index');
+    res.render('index',{ title: "Home Page" });
 };
 
 const about = (req, res) => {
-    res.render('./pages/about');
+    res.render('./pages/about', { title: "About Page" });
 };
 
 const blog = (req, res) => {
-    res.render('./pages/blog');
+    res.render('./pages/blog', { title: "Blog Page" });
 };
 
 const contact = (req, res) => {
-    res.render('./pages/contact');
+    res.render('./pages/contact', { title: "Contact Page" });
 };
 
 const pricing = (req, res) => {
-    res.render('./pages/Pricing');
+    res.render('./pages/Pricing', { title: "Pricing Page" });
 };
 
 const services = (req, res) => {
-    res.render('./pages/Services');
+    res.render('./pages/Services', { title: "Services Page" });
 };
 
 const counselor = (req, res) => {
-    res.render('./pages/counselor');
+    res.render('./pages/counselor', { title: "Counselor Page" });
 }
 
 // FORM CRUD
